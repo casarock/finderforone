@@ -9,14 +9,14 @@
 
         for (var i = 0, len = shows.length; i < len; i++) {
             var startTimeHour = shows[i].from.split(':')[0],
-                dateString = "%year%-12-31 %time%:00",
+                dateString = "%year%/12/31 %time%:00",
                 refDate,
                 newDateString = dateString.replace("%time%", shows[i].from);
 
             newDateString = newDateString.replace("%year%", (startTimeHour == 0 ? currentYear + 1 : currentYear));
             refDate = new Date(newDateString);
 
-            if (refDate > timeNow) {
+            if (refDate.getTime() > timeNow.getTime()) {
                 upcoming.push(shows[i]);
             }
         }
@@ -30,14 +30,14 @@
 
         for (var i = 0, len = shows.length; i < len; i++) {
             var startTimeHour = shows[i].from.split(':')[0],
-                dateString = "%year%-12-31 %time%:00",
+                dateString = "%year%/12/31 %time%:00",
                 refDate,
                 newDateString = dateString.replace("%time%", shows[i].from);
 
             newDateString = newDateString.replace("%year%", (startTimeHour == 0 ? currentYear + 1 : currentYear));
             refDate = new Date(newDateString);
 
-            if (refDate < timeNow) {
+            if (refDate.getTime() < timeNow.getTime()) {
                 missed.push(shows[i]);
             }
         }
