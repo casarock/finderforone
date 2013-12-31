@@ -12,4 +12,4 @@ Project based on bower if you want to fork and build yourself, install bower.
 ## Made in hurry and maybe not the best code ;)
 
 
-Current installation: http://
+Current installation: http://dinner4one.appsbu.de/
