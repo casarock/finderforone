@@ -10,11 +10,11 @@
 
         for (var i = 0, len = shows.length; i < len; i++) {
             var startTimeHour = shows[i].from.split(':')[0],
-                refDate;
-
-            dateString = dateString.replace("%time%", shows[i].from);
-            dateString = dateString.replace("%year%", (startTimeHour >= 0 ? currentYear + 1 : currentYear));
-            refDate = new Date(dateString);
+                refDate,
+                newDateString = dateString.replace("%time%", shows[i].from);
+            
+            newDateString = newDateString.replace("%year%", (startTimeHour == 0 ? currentYear + 1 : currentYear));
+            refDate = new Date(newDateString);
 
             if (refDate > timeNow) {
                 upcoming.push(shows[i]);
