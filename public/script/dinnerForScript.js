@@ -93,8 +93,6 @@
             $('.nav li').attr('class', '');
             $('#about').addClass('active');
         });
-
-
     }
 
     w.forOne = {

@@ -9,5 +9,7 @@ Just a fun project to have a list of 2013 Dinner for one shows in german televis
 
 Project based on bower if you want to fork and build yourself, install bower.
 
+## Made in hurry and maybe not the best code ;)
+
 
 Current installation: http://
