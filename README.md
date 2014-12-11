@@ -1,11 +1,11 @@
 finderforone
 ============
 
-Dinner for One Finder 2013.
+Dinner for One Finder 2014.
 
-## Find out when Dinner for one will be shown in Germany 2013
+## Find out when Dinner for one will be shown in Germany (Austria and Swiss) 2014
 
-Just a fun project to have a list of 2013 Dinner for one shows in german television.
+Just a fun project to have a list of 2014 Dinner for one shows in german television.
 
 Project based on bower if you want to fork and build yourself, install bower.
 
