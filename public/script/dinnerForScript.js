@@ -1,7 +1,7 @@
 (function(w) {
     var dateObj = new Date(),
         currentYear = dateObj.getFullYear(),
-        shows = window.dates["2013"];
+        shows = window.dates["2014"];
 
     function getUpcomingShows() {
         var timeNow = new Date(),
